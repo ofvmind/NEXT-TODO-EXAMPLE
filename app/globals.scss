@@ -13,6 +13,13 @@ body {
   background-attachment: fixed;
 }
 
+.center {
+  margin-top: 275px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .wrapper {
   margin: 125px auto auto auto;
   max-width: 900px;

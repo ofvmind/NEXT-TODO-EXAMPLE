@@ -14,12 +14,13 @@
     font-size: 30px;
     letter-spacing: 5px;
     font-style: oblique;
+    color: #fff;
 }
 
 .logo:hover {
     position: relative;
     margin-left: 20px;
-    text-shadow: 2px 2px 6px #000;
+    text-shadow: 2px 2px 6px #fff;
     transition: .5s ease-in-out;
 }
 
@@ -29,7 +30,7 @@
     .link {
       cursor: pointer;
       padding: 25px;
-      color: #000;
+      color: #fff;
       font-size: 25px;
       font-weight: bold;
       text-decoration: none;

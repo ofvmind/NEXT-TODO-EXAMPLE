@@ -25,7 +25,7 @@ export default async function ({ params }) {
       <section className="post">
         <p className="postTitle">{post.title}</p>
         <p className="postBody">{post.body}</p>
-        <Link className="btnPrimary" href="/">
+        <Link style={{textDecoration: 0}} className="btnPrimary" href="/">
           Back
         </Link>
       </section>
