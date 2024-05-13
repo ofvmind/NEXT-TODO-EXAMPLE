@@ -23,6 +23,6 @@ export async function generateStaticParams() {
   const posts = await fetch('https://server.net/api/posts').then(res => res.json());
 
   //id или любой уникальный идентификатор должен быть строковым(логично)
-  return posts.map(post => ({slug: post.slug}));
-  //потом в качестве пропса params, этот id доступе через params.id
+  return posts.map(post => ({slug: post.id}));
+  //потом в качестве пропса params, этот id доступе через params.slug
 }
