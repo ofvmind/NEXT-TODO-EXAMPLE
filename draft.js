@@ -16,12 +16,13 @@ fetch("https://server.net/api/posts", { next: { revalidate: 42 } });
 
 //Функция generateStaticParams
 //Используется при динамическом роутинге
+//Для того чтобы сервер заранее знал количество и создал страницы
 //В файле page.js динамического роута-папки [slug]
 //Название файла, папки и функции должны быть строго такого-же названия
 export async function generateStaticParams() {
   const posts = await fetch('https://server.net/api/posts').then(res => res.json());
 
   //id или любой уникальный идентификатор должен быть строковым(логично)
-  return posts.map(post => ({slug: post.id}));
+  return posts.map(post => ({slug: post.slug}));
   //потом в качестве пропса params, этот id доступе через params.id
 }
